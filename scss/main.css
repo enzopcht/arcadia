@@ -11975,6 +11975,18 @@ main {
   margin-bottom: 635px;
 }
 
+.hero-scene-content {
+  height: 200px; /* Hauteur par défaut pour mobile */
+}
+
+@media (min-width: 991px) {
+  main {
+    margin-bottom: 305px;
+  }
+  .hero-scene-content {
+    height: 400px;
+  }
+}
 .footer {
   position: absolute;
   width: 100%;
@@ -11986,11 +11998,41 @@ main {
 .footer .mentionsLiens {
   color: white;
   text-decoration: none;
-  font-size: 0.2em;
 }
 .footer .mentionsLiens:hover {
   color: #B6A28E;
 }
 .footer span {
   color: #B6A28E;
+}
+
+.hero-scene {
+  position: relative;
+}
+.hero-scene::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.3);
+  background-image: url("../assets/images/main_hero.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.hero-scene * {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .hero-scene .hero-scene-content img {
+    width: 100px;
+  }
+  .hero-scene .hero-scene-content h1, .hero-scene .hero-scene-content .h1 {
+    font-size: 14px;
+  }
+}
+.hero-scene .hero-scene-content h1, .hero-scene .hero-scene-content .h1 {
+  text-align: justify;
+  width: 40%;
 }/*# sourceMappingURL=main.css.map */
