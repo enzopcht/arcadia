@@ -1,0 +1,17 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$primary:#BFCC76;
+$secondary:#E9EED9;
+$dark:#B6A28E;
+$bg-dark:#54473F;
+$font-family-sans-serif: "Poppins", sans-serif !default;
+$font-family-serif:"Roboto", serif !default;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Then add additional custom code here
