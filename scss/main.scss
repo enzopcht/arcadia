@@ -1,2 +1,29 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+main {
+    margin-bottom: 635px;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    ul {
+        list-style: none;
+    }
+    .mentionsLiens {
+        color: white;
+        text-decoration: none;
+        font-size: 0.2em;
+        &:hover {
+            color: $dark;
+        }
+    }
+    span {
+        color: $dark;
+    }
+}
