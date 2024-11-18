@@ -1,5 +1,5 @@
-<?php  
-    require_once __DIR__. "/templates/header.php";
+<?php
+    require_once __DIR__ . "/../templates/header.php";
 ?>
 
 
@@ -12,9 +12,10 @@
     </div>
 </div>
 
+<main>
     <article class="container-xl mx-auto py-5 row align-items-center">
         <div class="col-12 col-lg-6 order-lg-2">
-        <img src="../assets/images/presentation/bienvenue_presentation.jpg" class="img-fluid rounded" alt="Image représentant la devanture du Zoo Arcadia">
+        <img src="<?php echo BASE_URL; ?>/assets/images/presentation/bienvenue_presentation.jpg" class="img-fluid rounded" alt="Image représentant la devanture du Zoo Arcadia">
         </div>
         <div class="col-12 col-lg-6">
             <h2 class="title-div text-primary pt-3 ">Bienvenue au zoo Arcadia</h2>
@@ -25,7 +26,7 @@
     <div class="bg-black">
         <article class="container-xl mx-auto py-5 row align-items-center">
             <div class="col-12 col-lg-6">
-            <img src="../assets/images/presentation/habitat_presentation.jpg" class="img-fluid rounded" alt="Image représentant les différents habitats d'Arcadia">
+            <img src="<?php echo BASE_URL; ?>/assets/images/presentation/habitat_presentation.jpg" class="img-fluid rounded" alt="Image représentant les différents habitats d'Arcadia">
             </div>
             <div class="col-12 col-lg-6">
                 <h2 class="title-div text-dark pt-3 ">Des habitats recréés pour chaque espèce</h2>
@@ -47,7 +48,7 @@
 
     <article class="container-xl mx-auto py-5 row align-items-center">
         <div class="col-12 col-lg-6 order-lg-2">
-        <img src="../assets/images/presentation/services_presentation.jpg" class="img-fluid rounded" alt="Image représentant les services d'Arcadia">
+        <img src="<?php echo BASE_URL; ?>/assets/images/presentation/services_presentation.jpg" class="img-fluid rounded" alt="Image représentant les services d'Arcadia">
         </div>
         <div class="col-12 col-lg-6">
             <h2 class="title-div text-primary pt-3 ">Des services pour une visite enrichissante et confortable</h2>
@@ -144,7 +145,8 @@
         </form>
     </div>
 </section>
-
+</main>
 <?php  
-    require_once __DIR__. "/templates/footer.php";
+        require_once __DIR__ . "/../templates/footer.php";
 ?>
+

@@ -1,7 +1,7 @@
 <footer class="bg-dark text-white footer">
         <div class="container-xl">
             <div class="d-flex justify-content-center py-2">
-                <img src="/assets/images/logo_arcadia.png" height="50px" alt="Logo d'Arcadia">
+                <img src="<?php echo BASE_URL; ?>/assets/images/logo_arcadia.png" height="50px" alt="Logo d'Arcadia">
             </div>
             <div class="row">
                 <div class="col-lg-3">
