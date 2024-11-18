@@ -11,34 +11,11 @@ main {
 .hero-scene-content {
     height: 200px; /* Hauteur par défaut pour mobile */
 }
-
-@media (min-width: 991px) {
-    main {
-        margin-bottom: 305px;
-    }
-    .hero-scene-content {
-        height: 400px;
-    }
+.title-div {
+    font-size: 20px;
+    text-align: justify;
 }
 
-.footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    ul {
-        list-style: none;
-    }
-    .mentionsLiens {
-        color: white;
-        text-decoration: none;
-        &:hover {
-            color: $dark;
-        }
-    }
-    span {
-        color: $dark;
-    }
-}
 
 .hero-scene {
     position: relative;
@@ -48,7 +25,7 @@ main {
     top: 0;
     left: 0;
     filter: brightness(0.3);
-    background-image: url("../assets/images/main_hero.png");
+    background-image: url("../assets/images/main_hero.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -71,4 +48,43 @@ main {
             width: 40%;
         }
     }
+} 
+
+article p {
+    text-align: justify;
 }
+
+
+
+// Footer 
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    ul {
+        list-style: none;
+    }
+    .mentionsLiens {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: $black;
+        }
+    }
+    span {
+        color: $black;
+    }
+}
+
+@media (min-width: 991px) {
+    main {
+        margin-bottom: 370px;
+    }
+    .hero-scene-content {
+        height: 400px;
+    }
+    .title-div {
+        font-size: 36px;
+    }
+}
+

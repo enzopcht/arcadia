@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="assets/images/logo_arcadia.png" height="40px" alt="Logo d'Arcadia"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,14 +48,14 @@
 
     </main>
 
-    <footer class="bg-black text-white footer">
+    <footer class="bg-dark text-white footer">
         <div class="container-xl">
             <div class="d-flex justify-content-center py-2">
                 <img src="/assets/images/logo_arcadia.png" height="50px" alt="Logo d'Arcadia">
             </div>
             <div class="row">
                 <div class="col-lg-3">
-                    <h4 class="text-dark">Infos utiles</h4>
+                    <h4 class="text-black">Infos utiles</h4>
                     <ul class="p-0">
                         <li>
                             <p><span>Tarifs</span> : Gratuit pour les enfants de moins de 3 ans, tarif réduit pour les étudiants et les seniors.</p>
@@ -66,27 +66,27 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h4 class="text-dark">Horaires</h4>
+                    <h4 class="text-black">Horaires</h4>
                     <p>Tours les jours de 8h à 18h</p>
                 </div>
                 <div class="col-lg-3">
-                    <h4 class="text-dark">Coordonnées</h4>
+                    <h4 class="text-black">Coordonnées</h4>
                     <div class="d-flex align-items-center pb-2">
-                        <i class="bi bi-geo-alt-fill text-dark pe-2"></i>
+                        <i class="bi bi-geo-alt-fill text-black pe-2"></i>
                         <p  class="m-0">123 Avenue de la Forêt de Brocéliande
                         56000, Bretagne, France</p>
                     </div>
                     <div class="d-flex align-items-center py-2">
-                        <i class="bi bi-telephone-fill text-dark pe-2"></i>
+                        <i class="bi bi-telephone-fill text-black pe-2"></i>
                         <p class="m-0">+33 2 99 99 99 99</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <h4 class="text-dark text-center">Suivez-nous</h4>
+                    <h4 class="text-black text-center">Suivez-nous</h4>
                     <div class="d-flex justify-content-evenly p-2">
-                        <a href="#"><i class="bi bi-twitter fs-2 text-dark"></i></a>
-                        <a href="#"><i class="bi bi-facebook fs-2 text-dark"></i></a>
-                        <a href="#"><i class="bi bi-instagram fs-2 text-dark"></i></a>
+                        <a href="#"><i class="bi bi-twitter fs-2 text-black"></i></a>
+                        <a href="#"><i class="bi bi-facebook fs-2 text-black"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-2 text-black"></i></a>
                     </div>
                 </div>
             </div>
