@@ -12019,6 +12019,10 @@ article p {
   text-align: justify;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .footer {
   position: absolute;
   width: 100%;
