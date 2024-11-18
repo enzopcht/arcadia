@@ -24,10 +24,10 @@
                     <a class="nav-link" href="<?php echo route(''); ?>">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo route('services'); ?>">Nos services</a>
+                    <a class="nav-link" href="<?php echo route('habitats'); ?>">Nos habitats</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nos habitats</a>
+                    <a class="nav-link" href="<?php echo route('services'); ?>">Nos services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Avis</a>
