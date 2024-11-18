@@ -22,7 +22,7 @@
                     </div>
                     <img src="<?php echo BASE_URL; ?>/assets/images/habitats/savane_card.jpg"  alt="Image de notre habitat savane">
                     <div class="card-body text-center">
-                        <a href="#" class="btn btn-dark">Découvrir</a>
+                        <a href="<?php echo route('habitat_choice'); ?>" class="btn btn-dark">Découvrir</a>
                     </div>
                 </div>
                 <div class="card shadow col-lg-4 p-0" style="width: 18rem;">

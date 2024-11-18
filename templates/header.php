@@ -6,7 +6,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/arcadia/scss/main.css">
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>/scss/main.css">
     <title><?php echo isset($pageTitle) ? htmlspecialchars($pageTitle) : 'Arcadia'; ?></title>
 </head> 

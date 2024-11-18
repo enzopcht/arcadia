@@ -12,5 +12,13 @@ return [
         'file' => 'pages/habitats.php',
         'title' => 'Nos habitats - Arcadia',
     ],
+    '/habitat_choice' => [
+        'file' => 'pages/habitat_choice.php',
+        'title' => 'Nom de l\'habitat - Arcadia',
+    ],
+    '/animal_choice' => [
+        'file' => 'pages/animal_choice.php',
+        'title' => 'Nom de l\'animal - Arcadia',
+    ],
     // Ajoutez d'autres routes ici
 ];
