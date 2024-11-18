@@ -1,3 +1,8 @@
+<?php  
+    require_once __DIR__. "/templates/header.php";
+?>
+
+
 <div class="hero-scene">
     <div class="">
         <div class="hero-scene-content d-flex gap-5 justify-content-center align-items-center">
@@ -139,3 +144,7 @@
         </form>
     </div>
 </section>
+
+<?php  
+    require_once __DIR__. "/templates/footer.php";
+?>
