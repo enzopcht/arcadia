@@ -4,8 +4,8 @@ return [
         'file' => 'pages/home.php',
         'title' => 'Accueil - Arcadia',
     ],
-    '/services' => [
-        'file' => 'pages/services.php',
+    '/nos_services' => [
+        'file' => 'pages/nos_services.php',
         'title' => 'Nos services - Arcadia',
     ],
     '/nos_habitats' => [

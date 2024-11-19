@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <a href="<?php echo route('habitats'); ?>" class="btn btn-dark">Voir nos habitats</a>
+                <a href="<?php echo route('nos_habitats'); ?>" class="btn btn-dark">Voir nos habitats</a>
             </div>
         </article>
     </div>
@@ -61,7 +61,7 @@
                 </ul>
             </div>
             <div class="col-12 text-center">
-                <a href="<?php echo route('services'); ?>" class="btn btn-primary">Voir nos services</a>
+                <a href="<?php echo route('nos_services'); ?>" class="btn btn-primary">Voir nos services</a>
             </div>
         </div>
     </article>

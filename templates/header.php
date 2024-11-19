@@ -26,7 +26,7 @@
                     <a class="nav-link" href="<?php echo route('nos_habitats'); ?>">Nos habitats</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo route('services'); ?>">Nos services</a>
+                    <a class="nav-link" href="<?php echo route('nos_services'); ?>">Nos services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Avis</a>
