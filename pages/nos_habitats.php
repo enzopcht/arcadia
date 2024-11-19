@@ -1,6 +1,9 @@
 <?php  
     require_once __DIR__ . "/../templates/header.php";
     require_once __DIR__ . "/../lib/habitats.php";
+
+    // $habitatImage = getHabitatImageById($pdo, $_GET['id']);
+    
 ?>
 <main>
     <div class="hero-scene">
@@ -17,14 +20,16 @@
         </div>
         <div class="container-xl">
             <div class="row justify-content-center gap-5 justify-content-lg-evenly">
-                <?php foreach ($habitats as $habitat) {?>
+                <?php foreach ($habitats as $habitat) {
+                    $habitatImage = getHabitatImageById($pdo, $habitat['id'])
+                    ?>
                     <div class="card shadow col-lg-4 p-0" style="width: 18rem;">
                         <div class="card-header text-center text-white bg-dark">
                             <?= htmlspecialchars($habitat['name']); ?>
                         </div>
-                        <img src="<?php echo BASE_URL; ?>/assets/images/habitats/savane_card.jpg"  alt="Image de notre habitat savane">
+                        <img src="<?php echo BASE_URL; ?><?= $habitatImage["file_path"] ?>"  alt="Image de notre habitat <?=$habitat['name']?>">
                         <div class="card-body text-center">
-                            <a href="<?php echo route('habitat_choice'). "?id=".$habitat['id']; ?>" class="btn btn-dark">Découvrir</a>
+                            <a href="<?php echo route('habitat'). "?id=".$habitat['id']; ?>" class="btn btn-dark">Découvrir</a>
                         </div>
                     </div>
                 <?php };?>

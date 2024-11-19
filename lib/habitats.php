@@ -24,4 +24,13 @@ function getHabitatById(PDO $pdo, int $id):array | bool
     return $query->fetch(PDO::FETCH_ASSOC);
 }
 
+
+function getHabitatImageById(PDO $pdo, int $id):array
+{
+    $query = $pdo->prepare('SELECT * FROM habitats_images WHERE habitat_id = :habitat_id');
+    $query->bindValue(':habitat_id', $id, PDO::PARAM_INT);
+    $query->execute();
+
+    return $query->fetch(PDO::FETCH_ASSOC);
+}
 ?>

@@ -12,7 +12,7 @@ return [
         'file' => 'pages/nos_habitats.php',
         'title' => 'Nos habitats - Arcadia',
     ],
-    '/habitat_choice' => [
+    '/habitat' => [
         'file' => 'pages/habitat_choice.php',
         'title' => 'Nom de l\'habitat - Arcadia',
     ],
