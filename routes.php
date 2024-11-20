@@ -20,9 +20,9 @@ return [
         'file' => 'pages/animal_choice.php',
         'title' => 'Nom de l\'animal - Arcadia',
     ],
-    '/animals' => [
-        'file' => 'lib/animals.php',
-        'title' => 'animals - Arcadia',
+    '/avis' => [
+        'file' => 'pages/nos_avis.php',
+        'title' => 'Avis - Arcadia',
     ],
     // Ajoutez d'autres routes ici
 ];

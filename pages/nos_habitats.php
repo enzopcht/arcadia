@@ -15,7 +15,7 @@
     </div>
     <section>
         <div class="container-xl text-body-tertiary justify-text py-4">
-        <h2 class=" text-primary pt-3 ">Des habitats adaptés pour chaque espèce</h2>
+        <h1 class=" text-primary pt-3 ">Des habitats adaptés pour chaque espèce</h1>
         <p class="text-body-tertiary">Au Zoo Arcadia, chaque espèce vit dans un habitat spécialement conçu pour recréer les conditions de son environnement naturel. Nous avons aménagé des espaces diversifiés et immersifs afin d’assurer le bien-être de nos résidents et d’offrir à nos visiteurs une expérience enrichissante et respectueuse de la biodiversité. Découvrez les différents habitats qui abritent nos animaux et permettent une rencontre harmonieuse avec la nature.</p>
         </div>
         <div class="container-xl">

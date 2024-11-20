@@ -1,7 +1,23 @@
 <?php
+    require_once __DIR__ . "/../lib/reviews.php";
     require_once __DIR__ . "/../templates/header.php";
-?>
 
+    $messagesList = [];
+    $errorsList = [];
+
+    if (isset($_POST['saveReview'])) {
+        $username = trim($_POST['username']);
+        $description = trim($_POST['description']);
+
+        if (strlen($username) > 0 && strlen($description) > 0) {
+            
+            $lastInsertedId = saveReview($pdo, $username, $description);
+            $messagesList[] = "Votre avis a bien été pris en compte et va être validé par l'un de nos employés sous peu.";
+        } else {
+            $errorsList[] = "Tous les champs sont requis.";
+        }
+    }
+?>
 
 <div class="hero-scene">
     <div class="">
@@ -13,6 +29,16 @@
 </div>
 
 <main>
+    <?php foreach ($messagesList as $message) { ?>
+        <div class="alert alert-success container-xl mt-3">
+            <?= $message; ?>
+        </div>
+    <?php } 
+    foreach ($errorsList as $error) { ?>
+        <div class="alert alert-danger container-xl mt-3">
+            <?= $error; ?>
+        </div>
+    <?php } ?>
     <article class="container-xl mx-auto py-5 row align-items-center">
         <div class="col-12 col-lg-6 order-lg-2">
         <img src="<?php echo BASE_URL; ?>/assets/images/presentation/bienvenue_presentation.jpg" class="img-fluid rounded" alt="Image représentant la devanture du Zoo Arcadia">
@@ -74,36 +100,21 @@
         <!-- Carousel -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <!-- Martin -->
-                <div class="carousel-item active">
-                    <div class="card mx-auto col-8" >
-                        <div class="card-header bg-dark text-white text-center">Martin</div>
-                        <div class="card-body">
-                            <p class="card-text text-center">Wow je teste le site 😘</p>
+                
+                <?php $first = true;
+                foreach ($lastReviews as $lastreview) { ?>
+                    <div class="carousel-item <?= $first ? 'active' : '' ?>">
+                        <div class="card mx-auto col-8" >
+                            <div class="card-header bg-dark text-white text-center"><?= $lastreview['username'] ?></div>
+                            <div class="card-body">
+                                <p class="card-text text-center"><?= $lastreview['description'] ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php $first = false;
+                } ?>
 
-                <!-- Michel -->
-                <div class="carousel-item">
-                    <div class="card mx-auto col-8" >
-                        <div class="card-header bg-dark text-white text-center">Michel</div>
-                        <div class="card-body">
-                            <p class="card-text text-center">Oui c'est vrai le parc est bien</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Nicole -->
-                <div class="carousel-item">
-                    <div class="card mx-auto col-8" >
-                        <div class="card-header bg-dark text-white text-center">Nicole</div>
-                        <div class="card-body">
-                            <p class="card-text text-center">Je suis venue avec mes petits-enfants</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                
 
             <!-- Contrôles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -118,14 +129,14 @@
 
         <h3 class="text-center text-white pt-5">Donnez-nous votre avis</h3>
         <!-- Formulaire -->
-        <form action="/submit-review" method="POST" class="p-3 mx-auto col-12" style="max-width: 600px;">
+        <form action="" method="POST" class="p-3 mx-auto col-12 col-lg-8" >
             <div class="mb-3">
                 <label for="pseudo" class="form-label text-white">Pseudo</label>
                 <input 
                     type="text" 
                     class="form-control" 
-                    id="pseudo" 
-                    name="pseudo" 
+                    id="username" 
+                    name="username" 
                     placeholder="Votre pseudo" 
                     maxlength="50" 
                     required>
@@ -137,11 +148,13 @@
                     id="description" 
                     name="description" 
                     rows="5" 
-                    placeholder="Partagez votre expérience au zoo Arcadia" 
-                    maxlength="500" 
+                    placeholder="Partagez votre expérience du zoo Arcadia" 
+                    maxlength="255" 
                     required></textarea>
             </div>
-            <button type="submit" class="btn btn-dark w-100">Envoyer</button>
+            <div class="mb-3 text-center">
+                <input type="submit" class="btn btn-dark" name="saveReview" value="Envoyer">
+            </div>
         </form>
     </div>
 </section>
