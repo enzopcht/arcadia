@@ -1,3 +1,13 @@
+<?php
+    require_once __DIR__ . "/../lib/session.php";
+    require_once __DIR__ . "/../lib/user.php";
+
+    if(isset($_SESSION['user'])) {
+        $user = $_SESSION['user'];
+        $userRole = getUserRoleById($pdo, $user['role_id']);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +44,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                <?php if (isUserConnected()) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Espace <?= $userRole['label'] ?></a>
+                    </li>
+                <?php } ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Connexion</a>
+                    <?php if (isUserConnected()) { ?>
+                        <a href="<?php echo route('logout');?>" class="btn btn-outline-primary me-2">Déconnexion</a>
+                    <?php } else { ?>
+                        <a href="<?php echo route('connexion_staff');?>" class="btn btn-outline-primary me-2">Espace personnel</a>
+                    <?php } ?>
                 </li>
                 
             </ul>

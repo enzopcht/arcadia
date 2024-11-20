@@ -24,5 +24,13 @@ return [
         'file' => 'pages/nos_avis.php',
         'title' => 'Avis - Arcadia',
     ],
+    '/connexion_staff' => [
+        'file' => 'pages/acces_pro.php',
+        'title' => 'Connexion - Arcadia',
+    ],
+    '/logout' => [
+        'file' => 'pages/logout.php',
+        'title' => 'Déconnexion - Arcadia',
+    ],
     // Ajoutez d'autres routes ici
 ];
